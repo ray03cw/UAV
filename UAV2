@@ -1,0 +1,14 @@
+cat << EOF > ~/デスクトップ/uav_browser.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=UAV Browser
+Comment=UAV-Downloader GUI Browser
+Exec=$HOME/Software/UAV-Downloader/venv/bin/uav-browser
+Icon=applications-internet
+Terminal=false
+Categories=Application;
+EOF
+
+chmod +x ~/デスクトップ/uav_browser.desktop
+gio set ~/デスクトップ/uav_browser.desktop metadata::trusted true 2>/dev/null || true

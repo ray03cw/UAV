@@ -1,0 +1,13 @@
+# 1. 必要な前提パッケージ（Git、Python環境、仮想環境ツールなど）を入れる
+sudo apt update && sudo apt install -y python3 python3-pip python3-tk ffmpeg git python3.12-venv
+
+# 2. ソフトウェア用のフォルダに移動して、ご主人様のGitHubからクローンする
+mkdir -p ~/Software && cd ~/Software
+git clone https://github.com/ray03cw/UAV-Downloader.git
+cd UAV-Downloader
+
+# 3. 仮想環境を作って、必要なライブラリをインストール＆セットアップする
+python3 -m venv venv
+./venv/bin/pip install --upgrade pip
+./venv/bin/pip install -r requirements.txt
+./venv/bin/pip install -e .
