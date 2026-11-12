@@ -1,4 +1,4 @@
-cat << 'EOF' > ~/デスクトップ/UAV-Downloader-Update&Run.desktop
+cat << 'EOF' > ~/デスクトップ/UAV-Downloader-Update-Run.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -10,5 +10,5 @@ Terminal=true
 Categories=Utility;
 EOF
 
-chmod +x ~/デスクトップ/UAV-Downloader-Update&Run.desktop
-gio set ~/デスクトップ/UAV-Downloader-Update&Run.desktop metadata::trusted true 2>/dev/null || true
+chmod +x ~/デスクトップ/UAV-Downloader-Update-Run.desktop
+gio set ~/デスクトップ/UAV-Downloader-Update-Run.desktop metadata::trusted true 2>/dev/null || true
